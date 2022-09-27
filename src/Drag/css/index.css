@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+.blank-cell-group,
+.char-cell-group {
+  width: 100%;
+  flex-direction: row;
+}
+
+.char-cell-group {
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.blank-cell-group .cell-item,
+.char-cell-group .cell-item {
+  width: 25%;
+  height: 25vw;
+  padding: .5rem;
+  box-sizing: border-box;
+}
+
+.blank-cell-group .cell-item .wrapper,
+.char-cell-group .cell-item .wrapper {
+  width: 100%;
+  height: 100%;
+  border: .1rem solid #ddd;
+  box-sizing: border-box;
+}
+
+.char-cell-group .cell-item .wrapper {
+  border: none;
+  background-color: orange;
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
+}
